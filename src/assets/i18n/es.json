@@ -1,0 +1,11 @@
+{
+  "HOME": "Inicio",
+  "ABOUT": "Acerca",
+  "CONTACT": "Contacto",
+  "HI" : "Hola {{name}}",
+  "AGE" : "Tu edad es: {{age}}",
+  "SELECT_LANGUAGE": "Selecciona tu idioma",
+  "LANGUAGES": "Idiomas",
+  "CANCEL": "Cancelar",
+  "FOLLOW_US_TW": "Seguinos en Twitter"
+}

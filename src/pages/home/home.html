@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'HOME' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list no-lines>
+    <ion-item>
+      <ion-label>{{ 'SELECT_LANGUAGE' | translate }}</ion-label>
+      <ion-select [(ngModel)]="languageSelected" (ionChange)='setLanguage()' [cancelText]="'CANCEL' | translate">
+        <ion-option *ngFor="let item of languages" [value]="item.code">{{item.name}}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>

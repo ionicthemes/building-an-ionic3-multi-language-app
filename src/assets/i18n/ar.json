@@ -1,0 +1,11 @@
+{
+  "HOME": "استهلال",
+  "ABOUT": "حول",
+  "CONTACT": "اتصال",
+  "HI" : "مرحبا {{name}}",
+  "AGE" : "عمرك: {{age}}",
+  "SELECT_LANGUAGE": "اختر لغتك",
+  "LANGUAGES": "اللغات",
+  "CANCEL": "إلغاء",
+  "FOLLOW_US_TW": "تابعونا على تويتر"
+}
