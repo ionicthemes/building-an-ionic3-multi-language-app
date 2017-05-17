@@ -5,7 +5,7 @@ import { StatusBar} from "@ionic-native/status-bar";
 
 import { TabsPage } from '../pages/tabs/tabs';
 
-import { TranslateService, LangChangeEvent } from 'ng2-translate';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 
 @Component({

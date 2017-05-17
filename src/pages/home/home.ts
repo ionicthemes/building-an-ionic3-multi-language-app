@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { TranslateService } from 'ng2-translate';
+import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from "../../providers/language.service";
 import { LanguageModel } from "../../models/language.model";
 
@@ -19,10 +19,17 @@ export class HomePage {
   )
   {
     this.languages = this.languageService.getLanguages();
+    this.setLanguage();
   }
 
   setLanguage(){
-    this.translate.setDefaultLang(this.languageSelected);
-    this.translate.use(this.languageSelected);
+    let defaultLanguage = this.translate.getDefaultLang();
+    if(this.languageSelected){
+      this.translate.setDefaultLang(this.languageSelected);
+      this.translate.use(this.languageSelected);
+    }else{
+      this.languageSelected = defaultLanguage;
+      this.translate.use(defaultLanguage);
+    }
   }
 }
