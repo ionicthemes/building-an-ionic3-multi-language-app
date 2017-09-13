@@ -1,12 +1,19 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      {{ 'ABOUT' | translate }}
-    </ion-title>
-  </ion-navbar>
+  <ion-toolbar color="primary">
+      <ion-title>  {{ 'ABOUT' | translate }}</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <p>{{'HI' | translate:param}}</p>
-  <p>{{'AGE' | translate:param}}</p>
+  <ion-card>
+    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/k/128.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{'HI' | translate:param}}
+        </ion-card-title>
+      <p>
+        {{'AGE' | translate:param}}
+      </p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
